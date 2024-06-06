@@ -59,3 +59,41 @@ display: flex;
   .hidden{
     display: none;
   }
+
+
+@media (max-width: 600px) {
+    .divider{
+      height: 4px;
+      width: 150px;
+      border: 1px solid #212121;
+      background-color: #212121;
+      margin: 10px;
+      border-radius: 50px;
+      
+      
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+  display: flex;
+  flex-direction: column;
+      font-size: 12px;
+      font-weight: bolder;
+      font-family: sans-serif;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+  
+    }
+    .profile {
+      border-radius: 30px;
+      border: 2px solid rgba(0, 0, 0);
+      background-color: #ff910069;
+      height: 300px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
