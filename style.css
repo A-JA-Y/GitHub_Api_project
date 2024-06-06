@@ -89,11 +89,16 @@ display: flex;
       border-radius: 30px;
       border: 2px solid rgba(0, 0, 0);
       background-color: #ff910069;
-      height: 300px;
-      width: 400px;
+      height: 500px;
+      width: 300px;
+      line-break: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 10px 6px;
+    }
+    .hidden{
+      display: none;
     }
   }
