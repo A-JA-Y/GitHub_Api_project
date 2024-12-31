@@ -27,7 +27,8 @@ form.addEventListener("submit", (e) => {
     )[0].innerHTML = `<span>Name : ${data["name"]} <br/>
           Address : ${!data["location"] ? "Not Given" : data["location"]} <br/>
           Followers : ${data["followers"]}</span><br/>
-          About : ${data["bio"]}</span>`;
+          About : ${data["bio"]}</span>
+          githhubstats:<iframe src="https://github-readme-stats.vercel.app/api?username=${data["login"]}&show_icons=true&theme=radical" width="400" height="200" frameborder="0" scrolling="no"></iframe>`;
   });
   xhr.send();
 card.classList.remove("hidden")
