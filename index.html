@@ -3,35 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <title>Github Profile Fetcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- 
-    0 unsent  client created, open not called yet
-    1 opened  open has been called  
-    2 headers_received  send() has been called
-    3 loading  downnloading ; responseText holds partial data
-    4 done  operation completed  
-my GitHub: https://github.com/A-JA-Y
-this comment is for - iframe tag can have the data of github stats card
-     -->
-     <h1 style="font-weight: 800; font-size: 4rem;" >Profile fetched from github</h1><br/>
-        <hr>
-        <form action="submit">
-
-          <input type="text" id="userInput" placeholder="Enter your GitHub user name and Hit 'Enter'">
-        </form>
+    <h1 style="font-weight: 800; font-size: 4rem">
+      Profile fetched from github
+    </h1>
+    <br />
+    <hr />
+    <form action="submit">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Enter your GitHub user name and Hit 'Enter'"
+      />
+    </form>
     <div id="card" class="container hidden">
-        
       <div class="profile">
         <div class="photo"></div>
-        <hr class="divider">
+        <hr class="divider" />
         <div class="followers"></div>
       </div>
     </div>
