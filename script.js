@@ -30,23 +30,25 @@ form.addEventListener("submit", async (e) => {
       `<img class="image" src="${data.avatar_url}" alt="${data.name || username}'s profile picture" />`;
     
     followersElement.innerHTML = `
-      <div>
-        <p><strong>Name:</strong> ${data.name || 'Not Available'}</p>
-        <p><strong>Address:</strong> ${data.location || 'Not Given'}</p>
-        <p><strong>Followers:</strong> ${data.followers}</p>
-        <p><strong>About:</strong> ${data.bio || 'No bio available'}</p>
+      <div style="width: 100%; overflow-wrap: break-word; word-break: break-word;">
+      <p><strong>Name:</strong> ${data.name || 'Not Available'}</p>
+      <p><strong>Address:</strong> ${data.location || 'Not Given'}</p>
+      <p><strong>Followers:</strong> ${data.followers}</p>
+      <p><strong>About:</strong> ${data.bio || 'No bio available'}</p>
       </div>
-      <div aria-label="GitHub Stats">
-        <h3>GitHub Stats:</h3>
-        <iframe 
-          src="https://github-readme-stats.vercel.app/api?username=${data.login}&show_icons=true&theme=radical" 
-          width="400" 
-          height="200" 
-          frameborder="0" 
-          scrolling="no"
-          title="${data.login}'s GitHub statistics"
-          loading="lazy">
-        </iframe>
+      <div aria-label="GitHub Stats" style="width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <h3>GitHub Stats:</h3>
+      <iframe 
+        src="https://github-readme-stats.vercel.app/api?username=${data.login}&show_icons=true&theme=radical" 
+        width="100%" 
+        max-width="400px"
+        height="200" 
+        frameborder="0" 
+        scrolling="no"
+        title="${data.login}'s GitHub statistics"
+        loading="lazy"
+        style="max-width: 100%;">
+      </iframe>
       </div>`;
     
     input.value = "";
